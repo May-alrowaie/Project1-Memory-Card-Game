@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="stylesheet" href="./css/style.css" />
+    <script defer src="./js/app.js"></script>
+
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Memory Card Game May</title>
+  </head>
+  <body>
+    <h1>Memory Cards Game!!</h1>
+    <table id="table">
+      <tr>
+        <td id="0" onclick='clickTd("0")'><span></span></td>
+        <td id="1" onclick='clickTd("1")'><span></span></td>
+        <td id="2" onclick='clickTd("2")'><span></span></td>
+        <td id="3" onclick='clickTd("3")'><span></span></td>
+        <td id="4" onclick='clickTd("4")'><span></span></td>
+      </tr>
+      <tr>
+        <td id="5" onclick='clickTd("5")'><span></span></td>
+        <td id="6" onclick='clickTd("6")'><span></span></td>
+        <td id="7" onclick='clickTd("7")'><span></span></td>
+        <td id="8" onclick='clickTd("8")'><span></span></td>
+        <td id="9" onclick='clickTd("9")'><span></span></td>
+      </tr>
+      <tr>
+        <td id="10" onclick='clickTd("10")'><span></span></td>
+        <td id="11" onclick='clickTd("11")'><span></span></td>
+        <td id="12" onclick='clickTd("12")'><span></span></td>
+        <td id="13" onclick='clickTd("13")'><span></span></td>
+        <td id="14" onclick='clickTd("14")'><span></span></td>
+      </tr>
+      <tr>
+        <td id="15" onclick='clickTd("15")'><span></span></td>
+        <td id="16" onclick='clickTd("16")'><span></span></td>
+        <td id="17" onclick='clickTd("17")'><span></span></td>
+        <td id="18" onclick='clickTd("18")'><span></span></td>
+        <td id="19" onclick='clickTd("19")'><span></span></td>
+      </tr>
+    </table>
+    <div class="grid-container"></div>
+
+    <p>Mistakes: <span id="trials">0</span></p>
+
+    <p id="game-over" style="display: none; color: red">
+      Game Over! You've made 5 mistakes.
+    </p>
+    <div id="score">Score: 0</div>
+    <div id="winner" style="display: none; font-size: 24px; color: green; text-align: center;"></div>
+    <div id="loser" style="display: none; font-size: 24px; color: red; text-align: center;"></div>
+    
+        </div>
+    <div class="actions">
+      <button id="restart-btn">Restart</button>
+    
+      </div>
+      
+  </body>
+</html>
