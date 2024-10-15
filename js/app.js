@@ -61,7 +61,7 @@ function clickTd(id) {
       if (wrongMatches >= maxWrongMatches) {
         loserMessage.innerText = "You lost! 😢 Restarting game..."
         loserMessage.style.display = "block"
-        setTimeout(restart, 2000)
+        setTimeout(restart, 3000)
       } else {
         scoreDisplay.innerText = `Score: ${score} (Wrong Matches: ${wrongMatches})`
       }
@@ -72,7 +72,7 @@ function clickTd(id) {
 
         prev = ""
         counter = 0
-      }, 300)
+      }, 500)
     }
   }
 }
