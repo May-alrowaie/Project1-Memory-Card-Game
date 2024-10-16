@@ -7,7 +7,6 @@ document.querySelector('td[id="0"] span').innerText = randomArr[0]
 
 let score = 0
 let wrongMatches = 0
-
 let matchedPairs = 0
 
 /*------------------------ Cached Element References ------------------------*/
@@ -40,7 +39,7 @@ function clickTd(id) {
   } else {
     let prevEle = document.querySelector(`td[id="${prev}"] span`)
 
-    if (currentEle && prevEle && currentEle.innerText === prevEle.innerText) {
+    if (currentEle.innerText === prevEle.innerText) {
       currentEle.style.color = "gold"
       prevEle.style.color = "gold"
       currentEle.style.textDecoration = "line-through"
